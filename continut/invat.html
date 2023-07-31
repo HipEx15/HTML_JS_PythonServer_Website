@@ -1,0 +1,106 @@
+<section>
+    <aside id="aside_links">
+        <a href="#sect_1" id="alink"><h3>Secțiunea 1</h3></a>
+        <a href="#sect_2" id="alink"><h3>Secțiunea 2</h3></a>
+        <a href="#sect_3" id="alink"><h3>Secțiunea 3</h3></a>
+    </aside>
+
+    <section id="section">
+        <fieldset id="sect_1">
+            <legend>Secțiunea 1:</legend>
+            <p id="data"></p>
+            <p id="ora"></p>
+            <p id="URL"></p>
+            <p id="locatie"></p>
+            <p id="browser"></p>
+            <p id="versiune"></p>
+            <p id="so"></p>
+        </fieldset>
+
+        <fieldset id="sect_2">
+            <legend>Secțiunea 2:</legend>
+            <canvas onclick="sectiunea_2(event)" id="canvas" width="700" height="300"></canvas><br/>
+
+            &nbsp;&nbsp;
+            <label for="contur">Introduceți culoarea pentru contur:</label>
+            <input type="color" id="contur" name="contur" value="#070707">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="umplere">Introduceți culoarea pentru umplere:</label>
+            <input type="color" id="umplere" name="umplere" value="#E10600"><br/>
+        </fieldset>
+
+        <fieldset id="sect_3">
+            <legend>Secțiunea 3:</legend>
+            <label for="pozitie"> Introduceți poziția dorită:</label>
+            <input type="number" id="pozitie" name="pozitie" value="1"><br/><br/>
+            <label for="fundal">Specificați culoarea de fundal:</label>
+            <input type="color" id="fundal" name="fundal" value="#070707" onclick="schimba_culoarea()"><br/><br/>
+            <button type="button" id="linie" name="linie" onclick="adauga_linie()">Inserați linia</button>&nbsp;&nbsp;
+            <button type="button" id="coloana" name="coloana" onclick="adauga_coloana()">Inserați coloana</button><br/><br/>
+
+            <div id="div_tabel">  
+                <p>Echipele din Formula 1:</p>
+                <table id="tabel">
+                    <tr>
+                        <th> Echipă </th>
+                        <th> Nume pilot principal</th>
+                        <th> Nume pilot secundar </th>
+                    </tr>
+                    <tr>
+                        <td> Mercedes </td>
+                        <td> Lewis Hamilton </td>
+                        <td> George Russell </td>
+                    </tr>
+                    <tr>
+                        <td> Ferrari </td>
+                        <td> Charles Leclerc </td>
+                        <td> Carlos Sainz </td>
+                    </tr>
+                    <tr>
+                        <td> Aston Martin </td>
+                        <td> Fernando Alonso </td>
+                        <td> Lance Stroll </td>
+                    </tr>
+                    <tr>
+                        <td> Red Bull </td>
+                        <td> Max Verstapen </td>
+                        <td> Sergio Perez </td>
+                    </tr>
+                    <tr>
+                        <td> McLaren </td>
+                        <td> Lando Norris </td>
+                        <td> Oscar Piastri </td>
+                    </tr>
+                    <tr>
+                        <td> Haas </td>
+                        <td> Kevin Magnussen </td>
+                        <td> Nico Hulkenberg </td>
+                    </tr>
+                    <tr>
+                        <td> Williams </td>
+                        <td> Alexander Albon </td>
+                        <td> Logan Sargeant </td>
+                    </tr>
+                    <tr>
+                        <td> Alpine </td>
+                        <td> Pierre Gasly </td>
+                        <td> Esteban Ocon </td>
+                    </tr>
+                    <tr>
+                        <td> Alfa Romeo </td>
+                        <td> Valtteri Bottas </td>
+                        <td> Zhou Guanyu </td>
+                    </tr>
+                    <tr>
+                        <td> AlphaTauri </td>
+                        <td> Yuki Tsunoda </td>
+                        <td> Nyck De Vries </td>
+                    </tr>
+                </table>
+                <br/>
+            </div>
+
+
+        </fieldset>
+    </section>
+</section>

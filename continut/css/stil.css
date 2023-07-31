@@ -1,0 +1,182 @@
+.logo, .wiki{
+    text-align: center;
+  }
+
+.running_car{
+    text-align: center;
+    margin-top: 1%;
+}
+
+.images{
+    border: 8px solid #555
+}
+
+.forminfo{
+  border: 0.1px dashed #070707;
+  padding-left: 25px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+body {
+    background-color: #FFF9FB;
+    font-family: "Monaco", Monospace;
+    font-size: 100%; 
+    padding-left: 10px;
+  }
+
+ nav {
+    padding: 4px;
+    margin-left: -6px;
+    background-color: #E10600;
+    font-family: "Monaco", Monospace;
+    color: #FFF9FB;
+    text-align: center;
+    font-size: 110%; 
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left:0;
+    overflow: hidden;
+    z-index: -1;
+    flex-wrap: wrap;
+  }
+
+iframe.wikiframe{
+    width:1400px; 
+    height: 600px; 
+}
+
+iframe { 
+  width:503px; 
+  height: 330px; 
+}
+
+:focus{
+  outline-width: 2px;
+  outline-style: dashed;
+  outline-color: black;
+}
+
+a:hover {
+  color: #18141c;
+}
+
+.menu{
+  font-size: 150%;
+  margin-right: 10px;
+  padding: 0px;
+  color: #FFF9FB;
+}
+
+::selection {
+  color: #FFF9FB;
+  background: #E10600;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-style: double;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: double;
+}
+
+input {
+  background-color: #fffcfc;
+  color: rgb(0, 0, 0);
+  border: 2px solid #555;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 60%;
+  height: 150px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  border: 2px solid #555;
+  border-radius: 4px;
+  background-color: #fffcfc;
+  resize: none;
+}
+
+button{
+  transition-duration: 0.4s;
+  border: 2px solid #555;
+  color: #070707;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #18141c;;
+  color: #fffcfc;
+}
+
+#index, #despre, #inregistreaza, #video, #desen, #invat{
+  color: #18141c;
+}
+
+canvas{
+  border:#000000;
+  border-style: solid;
+}
+
+#aside_links{
+  background-color: #E10600;
+  width: 13%;
+  position: absolute;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+#alink
+{
+  color: #FFF9FB;
+  text-align: center;
+}
+
+#alink:hover
+{
+  color: #070707;
+}
+
+#section
+{
+  margin-top: 10px;
+  margin-left: 300px;
+}
+
+@media print and (min-width: 1600px) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  iframe { 
+    width:400px; 
+    height: 200px; 
+  } 
+}
+
+@media screen and (min-width: 100px) {
+  body, nav, canvas, #sectio, aside{
+      margin: auto;
+      
+  }
+}

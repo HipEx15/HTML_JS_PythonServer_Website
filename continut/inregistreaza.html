@@ -1,0 +1,76 @@
+<section>
+    <form>
+        <div>
+            <h2>Informații generale: </h2>
+                <fieldset>
+                    <label>Nume utilizator:</label>
+                    <input type="text" id = "numeUtilizator"><br/><br/>
+                    <label>Parolă:</label>
+                    <input type="password" id = "parola"><br/><br/>
+                    <label>Nume:</label>
+                    <input type="text"><br/><br/>
+                    <label>Prenume:</label>
+                    <input type="text"><br/><br/>
+                    <label>Email:</label>
+                    <input type="email"><br/><br/>
+                    <label>Telefon:</label>
+                    <input type="tel"><br/><br/>
+                </fieldset>
+        </div>
+
+
+        <div>
+            <h2>Informații persoanale :</h2>
+
+                <fieldset>            
+                    <label>Sexul:</label>
+                    <select>
+                    <option value="M">Masculin</option>
+                    <option value="F">Feminin</option>
+                    <option value="None">Altceva</option>
+                    </select><br/><br/>
+                <label>Pilot preferat:</label>
+                    <input list="pilot">
+                    <datalist id="pilot">
+                        <option value="Max Verstapen"></option>
+                        <option value="Sergio Perez"></option>
+                        <option value="Fernando Alonso"></option>
+                        <option value="Carlos Sainz"></option>
+                        <option value="Lewis Hamilton"></option>
+                        <option value="Lance Stroll"></option>
+                        <option value="George Russell"></option>
+                        <option value="Valtteri Bottas"></option>
+                        <option value="Pierre Gasly"></option>
+                        <option value="Alexander Albon"></option>
+                        <option value="Yuki Tsunoda"></option>
+                        <option value="Logan Sargeant"></option>
+                        <option value="Kevin Magnussen"></option>
+                        <option value="Nyck De Vries"></option>
+                        <option value="Nico Hulkenberg"></option>
+                        <option value="Zhou Guanyu"></option>
+                        <option value="Lando Norris"></option>
+                        <option value="Charles Leclerc"></option>
+                        <option value="Esteban Ocon"></option>
+                        <option value="Oscar Piastri"></option>
+                    </datalist><br></br>
+                <label>Culoarea echipei preferate:</label>
+                    <input type="color"><br><br>
+                <label>Data nașterii:</label>
+                    <input type="date"><br><br>
+                <label>Ora nașterii:</label>
+                    <input type="time"><br><br>
+                <label>Vârstă:</label>
+                    <input type="range" min="1" max="99"><br><br>
+                <label>Alte pagini pe care le urmărești despre F1:</label>
+                    <input type="url"><br><br>
+                <label for="descriere">Descrierea paginilor:</label><br/>
+                    <textarea id="descriere" cols="40" rows="5"></textarea><br>
+            </fieldset>
+        </div>
+
+        <br/>&nbsp;&nbsp;<button type="button" onclick="inregistreaza()">Înregistrează</button>
+    </form>
+
+    <p id="rezultat"></p>
+
+</section>

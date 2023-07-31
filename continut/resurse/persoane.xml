@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persoane
+[
+<!ELEMENT persoane (persoana+)>
+<!ELEMENT persoana (nume, prenume, varsta, adresa, cv)>
+    <!ATTLIST persoana id CDATA #REQUIRED>
+    <!ELEMENT nume (#PCDATA)>
+    <!ELEMENT prenume (#PCDATA)>
+    <!ELEMENT varsta (#PCDATA)>
+    <!ELEMENT adresa (strada, numar, localitate, judet, tara)>
+        <!ELEMENT strada (#PCDATA)>
+        <!ELEMENT numar (#PCDATA)>
+        <!ELEMENT localitate (#PCDATA)>
+        <!ELEMENT judet (#PCDATA)>
+        <!ELEMENT tara (#PCDATA)>
+    <!ELEMENT cv (numar_telefon, email, educatie, limba_materna, limbi_straine)>
+        <!ELEMENT numar_telefon (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT educatie (#PCDATA)>
+        <!ELEMENT limba_materna (#PCDATA)>
+        <!ELEMENT limbi_straine (#PCDATA)>
+]>
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Ion Creanga</strada>
+            <numar>12</numar>
+            <localitate>Botosani</localitate>
+            <judet>Botosani</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <cv>
+            <numar_telefon>0765345633</numar_telefon>
+            <email>popescuion@gmail.com</email>
+            <educatie>Colegiul National "Mihai Eminescu"</educatie>
+            <limba_materna>Limba romana</limba_materna>
+            <limbi_straine>Limba engleza</limbi_straine>
+        </cv>
+    </persoana>
+    <persoana id="2">
+        <nume>Traian</nume>
+        <prenume>Vasile</prenume>
+        <varsta>19</varsta>
+        <adresa>
+            <strada>Calea Victoriei</strada>
+            <numar>17</numar>
+            <localitate>Bucuresti</localitate>
+            <judet>Bucuresti</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <cv>
+            <numar_telefon>0752342421</numar_telefon>
+            <email>vasile_traian@yahoo.com</email>
+            <educatie>Colegiul National "Matei Basarab"</educatie>
+            <limba_materna>Limba romana</limba_materna>
+            <limbi_straine>Limba germana</limbi_straine>
+        </cv>
+    </persoana>
+    <persoana id="3">
+        <nume>Capitanu</nume>
+        <prenume>Mircea</prenume>
+        <varsta>25</varsta>
+        <adresa>
+            <strada>Piata Libera</strada>
+            <numar>4</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <cv>
+            <numar_telefon>0753312675</numar_telefon>
+            <email>mirceacaptianu@gmail.com</email>
+            <educatie>Colegiul Naţional "Costache Negruzzi"</educatie>
+            <limba_materna>Limba romana</limba_materna>
+            <limbi_straine>Limba franceza</limbi_straine>
+        </cv>
+    </persoana>
+</persoane>
